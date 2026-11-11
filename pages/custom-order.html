@@ -1,0 +1,163 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Order | Buttercloud Bakery</title>
+    <link rel="stylesheet" href="../styles/global.css">
+    <link rel="stylesheet" href="../styles/custom-order.css">
+</head>
+<body>
+
+    <header class="site-header">
+        <nav class="navbar">
+            <a href="../index.html" class="logo">Buttercloud Bakery</a>
+
+            <ul class="nav-links">
+                <li><a href="../index.html">Beranda</a></li>
+                <li><a href="about.html">Tentang Kami</a></li>
+                <li><a href="products.html">Produk</a></li>
+                <li><a href="pricing.html">Harga</a></li>
+                <li><a href="gallery.html">Galeri</a></li>
+                <li><a href="contact.html">Kontak</a></li>
+                <li><a href="custom-order.html" class="active">Custom Order</a></li>
+                <li><a href="ingredients.html">Ingredients</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="order-hero">
+            <div class="hero-content">
+                <p class="subtitle">BUTTERcloud BAKERY</p>
+                <h1>Buat Kue Impianmu!</h1>
+                <p>
+                    Wujudkan kue spesial sesuai keinginanmu.
+                    Pilih rasa, ukuran, dan desain yang kamu sukai.
+                </p>
+                <a href="#order-form" class="btn-order">Pesan Sekarang</a>
+            </div>
+        </section>
+
+        <section class="order-process">
+            <h2>Bagaimana Cara Memesan?</h2>
+            <p class="section-description">
+                Ikuti langkah sederhana untuk membuat kue custom impianmu.
+            </p>
+
+            <div class="process-grid">
+                <article class="process-card">
+                    <span class="step-number">01</span>
+                    <h3>Pilih Desain</h3>
+                    <p>Tentukan tema dan desain kue yang kamu inginkan.</p>
+                </article>
+
+                <article class="process-card">
+                    <span class="step-number">02</span>
+                    <h3>Pilih Ukuran & Rasa</h3>
+                    <p>Pilih ukuran kue dan varian rasa favoritmu.</p>
+                </article>
+
+                <article class="process-card">
+                    <span class="step-number">03</span>
+                    <h3>Isi Formulir</h3>
+                    <p>Lengkapi detail pesanan dan tanggal pengambilan.</p>
+                </article>
+
+                <article class="process-card">
+                    <span class="step-number">04</span>
+                    <h3>Konfirmasi</h3>
+                    <p>Pesanan akan dikonfirmasi oleh tim Buttercloud Bakery.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="order-form-section" id="order-form">
+            <div class="form-heading">
+                <p class="subtitle">CUSTOM CAKE</p>
+                <h2>Form Pemesanan Kue</h2>
+                <p>Isi detail berikut untuk merencanakan kue spesialmu.</p>
+            </div>
+
+            <form class="custom-order-form" action="#" method="post">
+
+                <div class="form-group">
+                    <label for="customer-name">Nama Pelanggan</label>
+                    <input type="text" id="customer-name" name="customer-name"
+                           placeholder="Masukkan nama lengkap" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="customer-email">Email</label>
+                    <input type="email" id="customer-email" name="customer-email"
+                           placeholder="contoh@email.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="cake-type">Jenis Kue</label>
+                    <select id="cake-type" name="cake-type" required>
+                        <option value="">Pilih jenis kue</option>
+                        <option value="birthday">Kue Ulang Tahun</option>
+                        <option value="wedding">Kue Pernikahan</option>
+                        <option value="celebration">Kue Perayaan</option>
+                        <option value="other">Kue Custom Lainnya</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="cake-size">Ukuran Kue</label>
+                    <select id="cake-size" name="cake-size" required>
+                        <option value="">Pilih ukuran</option>
+                        <option value="small">Small (10 cm)</option>
+                        <option value="medium">Medium (15 cm)</option>
+                        <option value="large">Large (20 cm)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="cake-flavor">Varian Rasa</label>
+                    <select id="cake-flavor" name="cake-flavor" required>
+                        <option value="">Pilih rasa</option>
+                        <option value="chocolate">Chocolate</option>
+                        <option value="vanilla">Vanilla</option>
+                        <option value="strawberry">Strawberry</option>
+                        <option value="red-velvet">Red Velvet</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="cake-theme">Tema / Desain Kue</label>
+                    <input type="text" id="cake-theme" name="cake-theme"
+                           placeholder="Contoh: pastel floral, minimalis">
+                </div>
+
+                <div class="form-group">
+                    <label for="cake-message">Tulisan di Atas Kue</label>
+                    <input type="text" id="cake-message" name="cake-message"
+                           placeholder="Contoh: Happy Birthday">
+                </div>
+
+                <div class="form-group">
+                    <label for="pickup-date">Tanggal Pengambilan</label>
+                    <input type="date" id="pickup-date" name="pickup-date" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="additional-notes">Catatan Tambahan</label>
+                    <textarea id="additional-notes" name="additional-notes"
+                              rows="4" placeholder="Detail tambahan pesanan..."></textarea>
+                </div>
+
+                <button type="submit" class="submit-button">Kirim Pesanan</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 Buttercloud Bakery. Semua hak dilindungi.</p>
+        <p>Pontianak, Kalimantan Barat</p>
+    </footer>
+
+</body>
+</html>
