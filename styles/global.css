@@ -1,0 +1,178 @@
+/* =========================================
+   1. VARIABLES & RESET DASAR
+   ========================================= */
+:root {
+  /* Maksimal 3 warna utama Toko Kue */
+  --primary-color: #5c3a21;    /* Cokelat Tua */
+  --secondary-color: #d97706;  /* Karamel Emas */
+  --bg-light: #fdf8f5;         /* Krem Vanilla */
+
+  --text-dark: #2d1e14;
+  --text-muted: #6e5a4f;
+  --white: #ffffff;
+  --border-color: #e6d8cf;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--text-dark);
+  background-color: var(--bg-light);
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  width: 90%;
+  max-width: 1140px;
+  margin: 0 auto;
+}
+
+/* =========================================
+   2. NAVBAR & PENGECIL TAMPILAN LOGO
+   ========================================= */
+.site-header {
+  background-color: var(--white);
+  border-bottom: 1px solid var(--border-color);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.85rem 0;
+}
+
+.brand-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+/* Baris ini yang mengecilkan logo raksasa menjadi ukuran ikon rapi */
+.brand-logo img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  border-radius: 50%;
+  border: 1px solid var(--border-color);
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.15rem;
+}
+
+.nav-links a {
+  font-weight: 500;
+  font-size: 0.92rem;
+  color: var(--text-dark);
+  padding: 0.4rem 0.5rem;
+  border-radius: 4px;
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: var(--primary-color);
+  background-color: var(--bg-light);
+}
+
+.nav-links a.active {
+  color: var(--primary-color);
+  font-weight: 700;
+  border-bottom: 3px solid var(--secondary-color);
+  border-radius: 0;
+}
+
+/* =========================================
+   3. TOMBOL REUSABLE
+   ========================================= */
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  color: var(--white);
+}
+
+.btn-primary:hover {
+  background-color: #3e2615;
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background-color: var(--secondary-color);
+  color: var(--white);
+}
+
+.btn-secondary:hover {
+  background-color: #b45309;
+  transform: translateY(-2px);
+}
+
+/* =========================================
+   4. FOOTER (SERAGAM DI SEMUA HALAMAN)
+   ========================================= */
+.site-footer {
+  background-color: var(--primary-color);
+  color: var(--white);
+  padding: 2rem 0;
+  margin-top: 4rem;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.footer-info h3 {
+  font-size: 1.15rem;
+  margin-bottom: 0.25rem;
+}
+
+.footer-info p,
+.footer-copy p {
+  font-size: 0.9rem;
+  color: #e6d8cf;
+}
