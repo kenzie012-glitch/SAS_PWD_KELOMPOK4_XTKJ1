@@ -1,0 +1,67 @@
+
+/* BAGIAN PRODUK */
+.products-section {
+    padding: 40px 0;
+}
+
+.products-heading {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* GRID PRODUK */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+    align-items: stretch;
+}
+
+/* KARTU PRODUK */
+.product-card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    background-color: white;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* GAMBAR PRODUK */
+.product-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+/* INFORMASI PRODUK */
+.product-info {
+    padding: 12px;
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.product-info h2 {
+    font-size: 20px;
+    margin: 0;
+    font-weight: 600;
+}
+
+.product-info p {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+/* TOMBOL LIHAT HARGA */
+.product-info .btn {
+    display: inline-block;
+    margin-top: auto;
+    align-self: center;
+}
+
