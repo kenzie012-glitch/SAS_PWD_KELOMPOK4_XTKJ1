@@ -1,0 +1,129 @@
+
+/* INGREDIENTS PAGE */
+
+.ingredients-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 65px 25px;
+    color: #593b2c;
+}
+
+.ingredients-heading {
+    margin-bottom: 35px;
+}
+
+.ingredients-heading .subtitle {
+    color: #b8794c;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.ingredients-heading h1 {
+    font-size: 34px;
+    margin: 10px 0;
+    color: #593b2c;
+}
+
+.ingredients-heading p {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #806957;
+}
+
+/* TABLE */
+
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+    border-radius: 10px;
+}
+
+.ingredients-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #ffffff;
+}
+
+.ingredients-table thead {
+    background: #b87980;
+    color: white;
+}
+
+.ingredients-table th {
+    padding: 20px;
+    text-align: left;
+    font-size: 16px;
+}
+
+.ingredients-table td {
+    padding: 19px;
+    border-bottom: 1px solid #eadbd3;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.ingredients-table tbody tr:nth-child(even) {
+    background: #fff6f1;
+}
+
+.ingredients-table tbody tr:nth-child(odd) {
+    background: #ffffff;
+}
+
+.ingredients-table tbody tr:hover {
+    background: #f5e6dc;
+    transition: 0.3s;
+}
+
+/* ALLERGEN NOTE */
+
+.allergen-note {
+    margin-top: 35px;
+    padding: 25px;
+    background: #f4e6dc;
+    border-left: 5px solid #b87980;
+    border-radius: 10px;
+}
+
+.allergen-note h2 {
+    margin-bottom: 12px;
+    font-size: 21px;
+    color: #593b2c;
+}
+
+.allergen-note p {
+    color: #806957;
+    line-height: 1.8;
+    font-size: 14px;
+}
+
+/* FOOTER */
+
+.site-footer {
+    padding: 25px;
+    text-align: center;
+    background: #593b2c;
+    color: white;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+    .ingredients-container {
+        padding: 40px 15px;
+    }
+
+    .ingredients-heading h1 {
+        font-size: 26px;
+    }
+
+    .ingredients-table {
+        min-width: 750px;
+    }
+
+    .ingredients-table th,
+    .ingredients-table td {
+        padding: 14px;
+    }
+}
